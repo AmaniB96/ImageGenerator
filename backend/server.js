@@ -102,9 +102,9 @@ app.post('/api/generate-image', async (req, res) => {
         },
         parameters: {
           negative_prompt: "blurry, cropped, ugly",
-          width: 768, // Reduced size for faster generation
-          height: 512,
-          num_inference_steps: 20, // Reduced steps for faster generation
+          width: 1024, // Reduced size for faster generation
+          height: 1024,
+          num_inference_steps: 50, // Reduced steps for faster generation
           guidance_scale: 7.5
         }
       }),
